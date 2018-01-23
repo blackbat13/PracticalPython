@@ -7,6 +7,9 @@ image = Image.open("filters/cat.jpg")
 print("Showing loaded image")
 image.show()
 
+print(f"Image format is: {image.format}")
+print(f"Image color mode is: {image.mode}")
+
 print("Get the image size")
 size = image.size
 
