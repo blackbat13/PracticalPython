@@ -18,7 +18,6 @@ print("Size is returned as a tuple with two elements: (width, height)")
 print(f"Width of the image is {size[0]} and height is {size[1]}")
 
 print("Resizing image")
-
 resized_image = image.resize((128, 128))
 resized_image.show()
 
@@ -33,3 +32,6 @@ flipped_image.show()
 print("Cropping image")
 cropped_image = image.crop((300, 50, 600, 400))
 cropped_image.show()
+
+print("Saving image")
+cropped_image.save("cropped_image.jpg", "JPEG")
