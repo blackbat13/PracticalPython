@@ -1,2 +1,3 @@
 pyautogui
 Pillow >= 4.0.0
+pydub
