@@ -16,8 +16,8 @@ for y in range(0, height):
         green = abs((green - blue - red) * 1.5)
         blue = abs((blue - red - green) * 1.5)
         red = min(int(red), 255)
-        green = min(int(red), 255)
-        blue = min(int(red), 255)
+        green = min(int(green), 255)
+        blue = min(int(blue), 255)
 
         image.putpixel((x, y), (red, green, blue))
 
