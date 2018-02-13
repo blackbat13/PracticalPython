@@ -18,3 +18,6 @@ six
 pyglet
 numpy
 cocos2d
+
+# Chat room
+errbot
