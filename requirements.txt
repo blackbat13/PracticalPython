@@ -1,5 +1,23 @@
+# Keyboard, mouse, alerts
 pyautogui
+
+# Images
 Pillow >= 4.0.0
+
+# Audio
 pydub
+
+# Console colors
 colorama
+
+# Avatars
 pagan
+
+# Cocos 2d
+six
+pyglet
+numpy
+cocos2d
+
+# Chat room
+errbot
