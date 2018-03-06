@@ -21,3 +21,6 @@ cocos2d
 
 # Chat room
 errbot
+
+# Pygame
+pygame
