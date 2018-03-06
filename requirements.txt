@@ -1,2 +1,12 @@
 pyautogui
 Pillow >= 4.0.0
+
+# Chemlab
+Cython
+chemlab
+numpy
+scipy
+opengl
+matplotlib
+qt4-gl
+qt4
