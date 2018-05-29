@@ -11,10 +11,10 @@ RED = (255, 0, 0)
 pygame.init()
 
 # Set the width and height of the screen [width, height]
-width = 700
-height = 700
+width = 1440
+height = 900
 size = (width, height)
-screen = pygame.display.set_mode(size)
+screen = pygame.display.set_mode(size, pygame.FULLSCREEN)
 
 pygame.display.set_caption("Hypnotic Circles")
 
