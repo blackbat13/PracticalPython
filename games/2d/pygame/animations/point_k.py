@@ -1,5 +1,3 @@
-# http://collabedit.com/h39hj
-
 import pygame
 import random
 import math
@@ -13,9 +11,9 @@ RED = (255, 0, 0)
 pygame.init()
 
 # Set the width and height of the screen [width, height]
-width = 700
-height = 500
-size = (700, 500)
+width = 900
+height = 700
+size = (width, height)
 screen = pygame.display.set_mode(size)
 
 pygame.display.set_caption("My Game")
@@ -26,6 +24,8 @@ done = False
 # Used to manage how fast the screen updates
 clock = pygame.time.Clock()
 
+draw_centers = False
+
 radius = 40
 
 speedX = 1
@@ -34,10 +34,11 @@ speedY = 1
 ballX = width / 2
 ballY = height / 2
 
-power = 200
+power = 500
 
 centers = []
-centers.append({'x': 200, 'y': 300, 'power': power})
+centers.append({'x': 200, 'y': 400, 'power': power})
+centers.append({'x': 700, 'y': 400, 'power': power})
 
 screen.fill(WHITE)
 
@@ -81,8 +82,9 @@ while not done:
 
     pygame.draw.circle(screen, RED, [int(ballX), int(ballY)], radius)
 
-    for center in centers:
-        pygame.draw.circle(screen, BLACK, [int(center['x']), int(center['y'])], radius)
+    if draw_centers:
+        for center in centers:
+            pygame.draw.circle(screen, BLACK, [int(center['x']), int(center['y'])], radius)
 
     pygame.display.flip()
     clock.tick(60)
