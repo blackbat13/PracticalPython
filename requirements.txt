@@ -24,3 +24,6 @@ errbot
 
 # Pygame
 pygame
+
+# Pygame Zero
+pgzero
