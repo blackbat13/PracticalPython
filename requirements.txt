@@ -24,3 +24,6 @@ errbot
 
 # Pygame
 pygame
+
+# Cellular Automata
+cellpylib
