@@ -24,3 +24,9 @@ errbot
 
 # Pygame
 pygame
+
+# Speech Recognition
+SpeechRecognition
+
+# Using the microphone
+pyaudio
